@@ -2,10 +2,10 @@
   "name": "justus",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css"
-  },
+"scripts": {
+  "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+  "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
