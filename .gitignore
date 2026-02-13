@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+dist/
+# If you don't want the auto-generated CSS in your repo:
+# src/css/output.css

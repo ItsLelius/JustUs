@@ -10,9 +10,161 @@
 
   <title>Just Us - Virtual Card!</title>
 
+
 </head>
 
 <body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+
+  <!-- Navbar -->
+  <nav class="relative z-20 bg-white/80 backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo/Brand -->
+        <div class="text-xl sm:text-2xl font-bold text-gray-800">
+          JustUs
+        </div>
+
+        <!-- Scrolling Text Container with Fade -->
+        <div class="flex-1 mx-4 sm:mx-8 scroll-container">
+          <p class="scroll-text text-sm sm:text-lg">
+            HAPPY VALENTINE'S DAY, MY LOVE! I LOVE YOU SO MUCH!
+          </p>
+        </div>
+
+        <!-- Empty right side for balance -->
+        <div class="w-12 sm:w-20"></div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="relative z-10 min-h-screen pt-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8">
+        
+        <!-- Left Side - Message Boxes with Dashed Border (Scrollable with Fade) -->
+        <div class="lg:w-80 w-full sidebar-container">
+          <aside class="sidebar">
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-4">
+              
+              <!-- Message Box 1 -->
+              <div class="message-box" onclick="openModal(1)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 1"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 2 -->
+              <div class="message-box" onclick="openModal(2)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 2"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 3 -->
+              <div class="message-box" onclick="openModal(3)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 3"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 4 -->
+              <div class="message-box" onclick="openModal(4)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 4"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 5 -->
+              <div class="message-box" onclick="openModal(5)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 5"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 6 -->
+              <div class="message-box" onclick="openModal(6)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 6"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 7 -->
+              <div class="message-box" onclick="openModal(7)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 7"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 8 -->
+              <div class="message-box" onclick="openModal(8)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 8"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 9 -->
+              <div class="message-box" onclick="openModal(9)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 9"
+                  draggable="false"
+                />
+              </div>
+
+              <!-- Message Box 10 -->
+              <div class="message-box" onclick="openModal(10)">
+                <img 
+                  src="../assets/icon/messageBox.png" 
+                  alt="Message 10"
+                  draggable="false"
+                />
+              </div>
+
+            </div>
+          </aside>
+        </div>
+
+        <!-- Right Side - Main Content Area -->
+        <main class="flex-1">
+          <!-- Content will go here -->
+        </main>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="close-button" onclick="closeModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+      <img id="modalImage" class="modal-image" src="" alt="Message Image">
+      <div id="modalText" class="modal-text"></div>
+    </div>
+  </div>
 
   <!-- Grid Background -->
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-80"></div>
@@ -22,6 +174,8 @@
   <div class="absolute inset-0 bg-gradient-to-bl from-transparent via-transparent to-white/60 pointer-events-none"></div>
   <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/60 pointer-events-none"></div>
   <div class="absolute inset-0 bg-gradient-to-tl from-white/60 via-transparent to-transparent pointer-events-none"></div>
+
+  <script src="/src/js/Message.js"></script>
 
 </body>
 
