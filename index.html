@@ -11,51 +11,51 @@
   <title>Just Us - Virtual Card!</title>
 </head>
 
-<body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+<body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-y-auto">
   
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-80"></div>
 
-  <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-transparent pointer-events-none"></div>
-  <div class="absolute inset-0 bg-gradient-to-bl from-transparent via-transparent to-white/60 pointer-events-none"></div>
-  <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/60 pointer-events-none"></div>
-  <div class="absolute inset-0 bg-gradient-to-tl from-white/60 via-transparent to-transparent pointer-events-none"></div>
+  <div class="absolute inset-0 bg-linear-to-br from-white/60 via-transparent to-transparent pointer-events-none"></div>
+  <div class="absolute inset-0 bg-linear-to-bl from-transparent via-transparent to-white/60 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-linear-to-tr from-transparent via-transparent to-white/60 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-linear-to-tl from-white/60 via-transparent to-transparent pointer-events-none"></div>
   
-  <div class="relative z-10 min-h-screen flex items-center justify-center p-6">
+  <div class="relative z-10 min-h-screen flex items-center justify-center py-8 px-4 sm:p-6">
     
-    <div class="card-container">
-      <div class="card w-full max-w-lg relative">
+    <div class="card-container w-full">
+      <div class="card w-full max-w-sm mx-auto relative">
         
-        <div class="image-section h-72 absolute top-0 left-0 right-0 flex items-center justify-center" style="border-radius: 1.25rem;">
+        <div class="image-section h-64 sm:h-72 md:h-80 lg:h-96 absolute top-0 left-0 right-0 flex items-center justify-center" style="border-radius: 1.25rem;">
           <img 
-            src="./src/assets/img/us.jpg" 
+            src="./src/assets/img/us.png" 
             alt="Us" 
             class="w-full h-full object-cover"
             style="border-radius: 1.25rem;"
           />
         </div>
         
-        <div class="px-8 pt-6 pb-10 space-y-6 relative z-10" style="padding-top: 13rem;">
+        <div class="px-5 sm:px-6 pt-4 pb-8 sm:pb-10 space-y-5 sm:space-y-6 relative z-10" style="padding-top: 13rem; padding-top: clamp(13rem, 18vw, 18rem);">
           
           <div class="message-box p-1.5">
-            <div class="px-8 py-10" style="background: #F9DFDF; border-radius: 1rem;">
-              <h1 class="pixel-font text-white text-xl sm:text-2xl text-center tracking-wide" 
+            <div class="px-5 sm:px-6 py-8 sm:py-10" style="background: #F9DFDF; border-radius: 1rem;">
+              <h1 class="pixel-font text-white text-sm sm:text-base md:text-lg lg:text-xl text-center tracking-wide" 
                   style="text-shadow: 2px 2px 4px rgba(0,0,0,0.1); line-height: 1.4;">
                 HAPPY<br/>VALENTINE'S<br/>DAY,LOVE!
               </h1>
             </div>
           </div>
           
-          <div class="text-center pt-3">
-            <p id="typingText" class="typing-text inline-block text-lg" style="color: #F5AFAF;">
+          <div class="text-center pt-3 sm:pt-4">
+            <p id="typingText" class="typing-text inline-block text-sm sm:text-base md:text-lg" style="color: #F5AFAF;">
               Hi, 
             </p>
           </div>
           
-          <button id="envelopeBtn" class="envelope-button w-full py-4 flex items-center justify-center mt-4">
+          <button id="envelopeBtn" class="envelope-button w-full py-4 sm:py-5 flex items-center justify-center mt-4 sm:mt-5">
             <img 
               src="./src/assets/icon/letter-icon.png" 
               alt="Letter" 
-              class="w-8 h-8"
+              class="w-7 h-7 sm:w-8 sm:h-8"
             />
           </button>
           
@@ -66,8 +66,8 @@
     
   </div>
 
-  <footer class="fixed bottom-4 left-0 right-0 z-20 text-center">
-    <p class="text-gray-600 text-sm">Design & Built by <span class="font-bold">Adi</span></p>
+  <footer class="relative z-20 text-center py-4 mb-4">
+    <p class="text-gray-600 text-xs sm:text-sm">Design & Built by <span class="font-bold">Adi</span></p>
   </footer>
   
   <script src="./src/js/TextEffect.js"></script>
